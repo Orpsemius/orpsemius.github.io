@@ -91,6 +91,6 @@ function buttonAlert(){
 function footerYear(){
   const date = new Date();
   var year = date.getFullYear();
-  document.getElementById("footer-row").innerHTML = `<p>@${year} Bryan’s Café,</p>`;
+  document.getElementById("footer-row").innerHTML = `<p>@${year} Bryan’s Café, <a href="https://www.freeprivacypolicy.com/live/a9bbe998-a465-47dc-ae3f-0625bbf71254" target="_blank">Privacy Policy</a></p>`;
 
 }
