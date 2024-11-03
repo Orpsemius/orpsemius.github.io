@@ -5,7 +5,7 @@ function parseMenu(){
         const xmlDocument = new DOMParser().parseFromString(xmlString, "text/xml");
         const meals = xmlDocument.querySelectorAll("meal");
         const coffeeAndChocolate = xmlDocument.querySelectorAll("variation");
-        const descriptionCoffeeAndChocolate = xmlDocument.querySelector("descriptionCoffeAndChocolate").textContent;
+        const descriptionCoffeeAndChocolate = xmlDocument.querySelector("descriptionCoffeeAndChocolate").textContent;
         const others = xmlDocument.querySelectorAll("otherBeverage");
 
         for (const meal of meals){
@@ -34,7 +34,9 @@ function parseMenu(){
             <img src="images/${coffeeImage}" class="card-img-top" alt="image of coffe and hot chocolate ">
             <div class="card-body">
               <h5 class="card-title">${coffeeSize}</h5>
-              <p class="card-text">${coffeePrice}</p>
+              <h6 class="card-title">${coffeePrice}</h6>
+              <p class="card-text"> ${descriptionCoffeeAndChocolate}<p>
+              
             </div>
           </div>`
         }
@@ -48,7 +50,7 @@ function parseMenu(){
             <img src="images/${otherImage}" class="card-img-top" alt="image of ${otherName}">
             <div class="card-body">
               <h5 class="card-title">${otherName}</h5>
-              <p class="card-text">${otherPrice}</p>
+              <h6 class="card-text">${otherPrice}</h6>
             </div>
           </div>`
         }
@@ -67,13 +69,15 @@ function parseContact(){
     for (const branch of branches){
       const address = branch.querySelector("address").textContent;
       const contact = branch.querySelector("contact").textContent
-      const hours = branch.querySelector("openingHours").textContent;
+      const monFri = branch.querySelector("openingHoursMonFri").textContent;
+      const satSun = branch.querySelector("openingHoursSatSun").textContent;
       const link = branch.querySelector("link").textContent;
 
       document.getElementById("contactCards").innerHTML += `<div class="card" style="width: 33rem;">
             <div class="card-body">
               <a href="${link}"><h3 class="card-title">${address}</h3></a>
-              <h5 class="card-text">${hours}</h5>
+              <h5 class="card-text">${monFri}</h5>
+              <h5 class="card-text">${satSun}</h5>
               <h6 class="card-text">Contact number: ${contact}</h6>
 
             </div>
@@ -91,6 +95,6 @@ function buttonAlert(){
 function footerYear(){
   const date = new Date();
   var year = date.getFullYear();
-  document.getElementById("footer-row").innerHTML = `<p>@${year} Bryan’s Café, <a href="https://www.freeprivacypolicy.com/live/a9bbe998-a465-47dc-ae3f-0625bbf71254" target="_blank">Privacy Policy</a></p>`;
+  document.getElementById("footer-row").innerHTML = `<p>@${year} Bryan’s Café, <a href="https://www.freeprivacypolicy.com/live/a9bbe998-a465-47dc-ae3f-0625bbf71254" id="linkPrivacy" target="_blank">Privacy Policy</a></p>`;
 
 }

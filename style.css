@@ -59,6 +59,20 @@ div{
     justify-content: center; /* Center horizontally */
     background-color: #3e6375;
     margin-top: 5px;
+    color: lightgray
+}
+
+a:visited{
+    color: lightgrey;
+
+   
+
+}
+
+a:link{
+    color: lightgrey;
+
+
 }
 
 #general-box{
@@ -82,11 +96,14 @@ div{
 
 #navbar{
     overflow: hidden;
+    
    
 }
 
 .navbar-brand{
     font-size: 30px!important;
+    color: lightgray !important;
+   
 }
 
 .container{

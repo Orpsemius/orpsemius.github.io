@@ -3,7 +3,7 @@
 <menu>
     <meals>
         <meal>
-            <name>Beetrot and feta salad</name>
+            <name>Beetroot and feta salad</name>
             <price>$15.00</price>
             <description>Suitable for vegetarians, made with fresh beetrot.</description>
             <image>beetrootFetaSalad.jpeg</image>
@@ -30,7 +30,7 @@
     </meals>
     
     <beverages>
-        <coffeAndChocolate>
+        <coffeeAndChocolate>
             <variation>
                 <size>Small</size>
                 <price>$3.50 </price>
@@ -46,8 +46,8 @@
                 <price>$4.50</price>
                 <image>bigCC.jpeg</image>
             </variation>
-            <descriptionCoffeAndChocolate>For coffe, please inform the staff of the coffee type</descriptionCoffeAndChocolate>
-        </coffeAndChocolate>
+            <descriptionCoffeeAndChocolate>For coffee, please inform the staff of the coffee type</descriptionCoffeeAndChocolate>
+        </coffeeAndChocolate>
 
         <otherBeverage>
             <name>Soda</name>

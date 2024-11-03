@@ -2,8 +2,8 @@
     <!ELEMENT menu (meals, beverages)>
     <!ELEMENT meals (meal+)>
     <!ELEMENT meal (name, price, description, image)>
-    <!ELEMENT beverages (coffeAndChocolate, otherBeverage+)>
-    <!ELEMENT coffeAndChocolate (variation+, descriptionCoffeAndChocolate)>
+    <!ELEMENT beverages (coffeeAndChocolate, otherBeverage+)>
+    <!ELEMENT coffeeAndChocolate (variation+, descriptionCoffeeAndChocolate)>
     <!ELEMENT variation (size, price, image)>
     <!ELEMENT otherBeverage (name,price, image)>
     <!ELEMENT name (#PCDATA)>
@@ -11,4 +11,4 @@
     <!ELEMENT description (#PCDATA)>
     <!ELEMENT size (#PCDATA)>
     <!ELEMENT image (#PCDATA)>
-    <!ELEMENT descriptionCoffeAndChocolate (#PCDATA)>
+    <!ELEMENT descriptionCoffeeAndChocolate (#PCDATA)>
