@@ -5,13 +5,13 @@
         <meal>
             <name>Beetroot and feta salad</name>
             <price>$15.00</price>
-            <description>Suitable for vegetarians, made with fresh beetrot.</description>
+            <description>Suitable for vegetarians, made with fresh beetroot</description>
             <image>beetrootFetaSalad.jpeg</image>
         </meal>
         <meal>
             <name>Sourdough Rye Sandwich</name>
             <price>$18.00</price>
-            <description>Cheese and salad sandwich made with organic, sourdough rye bread.</description>
+            <description>Cheese and salad sandwich made with organic, sourdough rye bread</description>
             <image>sourdoughRyeSandwich.jpeg</image>
         </meal>
         <meal>
